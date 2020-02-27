@@ -17,7 +17,7 @@ HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 Coming Soon
 
 ## Next Steps
-Add category creation
-Add recipe share functionality
-Add recipe favoriting
-Add favorites page
+### Add category creation
+### Add recipe share functionality
+### Add recipe favoriting
+### Add favorites page
