@@ -3,12 +3,13 @@
 ## Description
 This app will allow you to input your favorite recipes and keep them all stored in one place.  There will be serveal categories for you to choose from.
 
+## Entity Relationship Diagram
+
+![Recipe Tracker ERD](public/images/RecipeTrackerERD.png)
+
 ## Wireframe
 
-![Recipe Tracker Wireframe](public/images/RecipeTrackerERD.jpg)
-
-## Entity Relationship Diagram
-![Recipe Tracker ERD](public/images/RecipeTrackerWireframe.png)
+![Recipe Tracker Wireframe](public/images/RecipeTrackerWireframe.jpg)
 
 ## Tech Used
 HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
