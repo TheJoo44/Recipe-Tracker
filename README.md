@@ -5,7 +5,7 @@ This app will allow you to input your favorite recipes and keep them all stored 
 
 ## Wireframe
 
-![Recipe Tracker Wireframe](public/images/RecipeTrackerERD.png)
+![Recipe Tracker Wireframe](public/images/RecipeTrackerERD.jpg)
 
 ## Entity Relationship Diagram
 ![Recipe Tracker ERD](public/images/RecipeTrackerWireframe.png)
