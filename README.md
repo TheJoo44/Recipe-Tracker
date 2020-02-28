@@ -13,6 +13,9 @@ This app will allow you to input your favorite recipes and keep them all stored 
 ## Tech Used
 HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 
+## Trello
+[Trello](https://trello.com/b/alhQQITZ/project-2)
+
 ## App Link
 Coming Soon
 

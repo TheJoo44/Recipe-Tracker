@@ -1,8 +1,22 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.mynavbar span {
+  width: 100%;
+}
+
+.mynavbar {
+  background-color: darkred;
+  border: 7px ridge crimson;
+}
+
+.mynavbar h1 {
+  font-size: 20px;
+  margin: 0 auto;
 }
