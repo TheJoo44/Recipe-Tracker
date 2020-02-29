@@ -18,5 +18,9 @@ a {
 
 .mynavbar h1 {
   font-size: 20px;
-  margin: 0 auto;
+  text-align: center;
+}
+
+.welc-name {
+  color: darkgreen;
 }
