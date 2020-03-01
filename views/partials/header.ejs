@@ -13,14 +13,16 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav class="navbar mynavbar">
-    <span class="navbar-brand mb-0 h1"><h1><%= title %></h1></span>
-    <a href="/">Home</a>
-    <a href="/users">Profile</a>
-    <% if (user) { %>
-      <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-    <% } else { %>
-      <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-    <% } %>
-  </nav>
+    <header>
+      <nav class="navbar mynavbar">
+        <span class="navbar-brand mb-0 h1"><h1><%= title %></h1></span>
+        <a href="/">Home</a>
+        <a href="/users">Profile</a>
+        <% if (user) { %>
+          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+        <% } else { %>
+          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+        <% } %>
+      </nav>
+    </header>
     
