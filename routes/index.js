@@ -6,7 +6,7 @@ router.get('/index', isLoggedIn, usersCtrl.index);
 
 /* GET login page. */
 router.get('/', function(req, res) {
-  res.render('index', { user: req.user, firstName: req.givenName, title: 'Recipe Tracker(working title)' });
+  res.render('index', { user: req.user, firstName: req.givenName, title: 'Recipe Tracker' });
 });
 
 //  Google OAuth login route

@@ -13,25 +13,32 @@ a {
 }
 
 .index-bkgd {
-background-image: url("public/images/kitchen-knife-952478.jpg");
+background-image: url("/images/kitchen-knife-952478.jpg");
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 color: mediumblue;
 text-align: center;
-height: 82vh;
+height: 84vh;
 width: 100vw;
-border: 5px solid black;
 }
 
+.welcome {
+  font-size: 70px;
+  font-family: 'Indie Flower';
+  width: 60%;
+  position: relative;
+  top: 75px;
+  left: 515px;
+}
 
 .mynavbar span {
   width: 100%;
 }
 
 .mynavbar {
-  background-color: darkred;
-  border: 7px ridge crimson;
+  background-color: #55697A;
+  border-bottom: 7px ridge #9FACAA;
 }
 
 .mynavbar h1 {
@@ -54,6 +61,15 @@ border: 5px solid black;
 
 .footer-name {
   text-align: right;
-  font-size: 15px;
-  padding: 5px;
+  font-size: 10px;
+  padding: 3px;
 }
+
+/* font-family: 'Trade Winds', ;
+font-family: 'Lobster', ;
+font-family: 'Indie Flower', ;
+font-family: 'Shadows Into Light', ;
+font-family: 'Amatic SC', ;
+font-family: 'Caveat', ;
+font-family: 'Permanent Marker', ;
+font-family: 'Kaushan Script', ; */
