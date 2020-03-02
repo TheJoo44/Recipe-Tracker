@@ -17,38 +17,176 @@ background-image: url("/images/kitchen-knife-952478.jpg");
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
+position: fixed;
+top: 75px;
 color: mediumblue;
 text-align: center;
-height: 84vh;
+height: 87vh;
 width: 100vw;
 }
 
 .welcome {
   font-size: 70px;
   font-family: 'Indie Flower';
+  font-style: oblique;
   width: 60%;
-  position: relative;
-  top: 75px;
+  position: absolute;
+  top: 100px;
   left: 515px;
 }
 
+.welc-name {
+  font-size: 20px;
+  width: 300px;
+  
+}
+
+.profile-bkgd {
+  background-image: url("/images/anise-aroma-art-bazaar-277253.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 75px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.profile-name {
+  font-style: 30px;
+  color: white;
+  padding: 5px 0;
+  background-color: black;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+  width: 75vw;
+}
+
+.categories {
+  color: white;
+  margin: 0 auto;
+  overflow: scroll;
+  border: 3px solid white;
+}
+
+.breakfast-cat {
+  background-image: url("/images/variety-of-cooked-dishes-374052.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.lunch-cat {
+  background-image: url("/images/club-sandwich-served-on-chopping-board-1600711.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.dinner-cat {
+  background-image: url("/images/steak-food-769289.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.app-cat {
+  background-image: url("/images/three-breads-with-sliced-vegetables-1580464.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.soup-cat {
+  background-image: url("/images/bowl-of-soup-and-two-silver-spoons-1703272.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.dessert-cat {
+  background-image: url("/images/donuts-and-bagel-display-205961.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.cat-bkgd {
+  background-image: url("/images/carrots-food-fresh-freshness-616404.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 75px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cat-name {
+  font-size: 100px;
+  color: white;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Permanent Marker';
+}
+
 .mynavbar span {
-  width: 100%;
+  width: 280px;
+  margin: 0;
+
 }
 
 .mynavbar {
   background-color: #55697A;
   border-bottom: 7px ridge #9FACAA;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+
 }
 
 .mynavbar h1 {
-  font-size: 20px;
-  text-align: center;
+  font-size: 40px;
+  text-align: left;
+  padding: 0 0 5px 0;
+  border-right: 10px ridge #9FACAA;
+  font-family: 'Kaushan Script';
 }
 
-.welc-name {
-  color: darkgreen;
-}
 
 .site-footer {
   position: fixed;

@@ -1,3 +1,15 @@
 <%- include('../partials/header') %>
-<h2 class="welc-name">Welcome to <%= user.firstName %>'s Profile Page</h2>
+<div class="profile-bkgd">
+  <div class="profile-name">
+    <h2><%= user.firstName %>'s Cookbook</h2>
+  </div>
+  <div class="flex-container categories">
+    <a href="/users/categories/breakfast"><div class="breakfast-cat">Breakfast</div></a>
+    <a href="/users/categories/lunch"><div class="lunch-cat">Lunch</div></a>
+    <a href="/users/categories/dinner"><div class="dinner-cat">Dinner</div></a>
+    <a href="/users/categories/appetizers"><div class="app-cat">Appetizers</div></a>
+    <a href="/users/categories/soups-salads"><div class="soup-cat">Soups & Salads</div></a>
+    <a href="/users/categories/desserts"><div class="dessert-cat">Desserts</div></a>
+  </div>
+</div>
 <%- include('../partials/footer') %>

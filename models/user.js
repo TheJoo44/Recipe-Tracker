@@ -5,8 +5,12 @@ const userSchema = new Schema({
   name: String,
   firstName: String,
   email: String,
-  picture: String,
-  googelId: String
+  photos: String,
+  googelId: String,
+  categories: [{
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }]
 }, {
   timestamps: true
 });

@@ -23,5 +23,4 @@ function index(req, res, next) {
       sortKey
     });
   });
-  console.log(user)
 }
