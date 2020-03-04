@@ -1,13 +1,15 @@
 <%- include('../partials/header') %>
 <div class="recipe-bkgd">
   <div class="recipe-name">
-    <p>Recipe</p><!--recipe.recName-->
+    <p><%= recipe.name %></p>
+    
   </div>
   <div class="recipe">
     <div class="picture"></div>
-    <div class="description">Description<%= recipes.description %></div>
-    <div class="ingredients">Ingredients<%= recipes.ingredients %></div>
-    <div class="instructions">Instructions<%= recipes.instructions %></div>
+    <div class="description">Description<p><%= recipe.description %></p></div>
+    <div class="ingredients">Ingredients<p><%= recipe.ingredients %></p></div>
+    <div class="instructions">Instructions<p><%= recipe.instructions %></p></div>
+    <div class="instructions">Created By<p><%= user.name %></p></div>
   </div>
 </div>
 <%- include('../partials/footer') %>

@@ -12,7 +12,7 @@ const Recipe = require('../models/recipe')
 router.get('/:catName', isLoggedIn, categoryCtrl.index);
 
 router.get('/:catName', isLoggedIn, function(req, res, next) {
-  console.log('GET RECIPES ROUTE')
+  console.log('GET RECIPES NAMES ROUTE')
   Recipe.find({}, function(err, recipes) {
     res.render('category/:catName', {recipes});
   });
