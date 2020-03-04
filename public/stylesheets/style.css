@@ -74,6 +74,7 @@ width: 100vw;
   margin: 0 auto;
   overflow: scroll;
   border: 3px solid white;
+  font-family: 'Permanent Marker';
 }
 
 .breakfast-cat {
@@ -87,6 +88,17 @@ width: 100vw;
   margin: 10px 25px;
 }
 
+.breakfast-cat:hover {
+  background-image: url("/images/variety-of-cooked-dishes-374052.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+  border-bottom: 40px solid black;
+}
 .lunch-cat {
   background-image: url("/images/club-sandwich-served-on-chopping-board-1600711.jpg");
   background-position: center;
@@ -154,12 +166,57 @@ width: 100vw;
 }
 
 .cat-name {
-  font-size: 100px;
+  font-size: 75px;
   color: white;
   padding: 10px 0 0 10px;
   text-align: center;
   text-decoration: underline;
   font-family: 'Permanent Marker';
+}
+
+.recipe-list {
+  height: 55%;
+  width: 40%;
+  border: 3px solid white;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.recipe-bkgd {
+  background-image: url("/images/apple-bright-carrots-citrus-952479.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 75px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.add-recipe-title {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 10px 0 0 10px;
+  text-decoration: underline;
+}
+
+.add-recipe-form {
+  height: 65%;
+  width: 50%;
+  border: 3px solid white;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.formbox {
+  background-color: white;
+}
+
+.form-labels {
+  color: #D4BC2F;
+  font-size: 20px;
+  margin: 10px 5px;
 }
 
 .mynavbar span {
@@ -186,7 +243,6 @@ width: 100vw;
   border-right: 10px ridge #9FACAA;
   font-family: 'Kaushan Script';
 }
-
 
 .site-footer {
   position: fixed;

@@ -2,19 +2,21 @@ var express = require('express');
 var passport = require('passport');
 var router = express.Router();
 var categoryCtrl = require('../controllers/categories');
-const Category = require('../models/category')
+const Category = require('../models/category');
+const Recipe = require('../models/recipe')
 
 // GET /category
-router.get('/index', categoryCtrl.index);
+// router.get('/index', categoryCtrl.index);
+
+
+router.get('/:catName', isLoggedIn, categoryCtrl.index);
 
 router.get('/:catName', isLoggedIn, function(req, res, next) {
-  console.log(req.user)
-  console.log(req.params.catName)
-  Category.findOne({catName: req.params.catName}, function(err, foundCategory) {
-    console.log(foundCategory)
-    res.render('category/categories', {user: req.user, firstName: req.givenName, category: foundCategory,  title: 'Category Page'});
-  })
-});
+  console.log('GET RECIPES ROUTE')
+  Recipe.find({}, function(err, recipes) {
+    res.render('category/:catName', {recipes});
+  });
+})
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated() ) return next();

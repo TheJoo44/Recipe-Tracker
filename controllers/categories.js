@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const Category = require('../models/category');
+const Recipe = require('../models/recipe');
 
 module.exports = {
   index,
@@ -7,15 +8,18 @@ module.exports = {
 };
 
 function index(req, res, next) {
-    res.render('category/categories', {
-      users,
-      user: req.user,
-      name: req.query.name,
-      sortKey
+  console.log('CATEGORIES INDEX CONTROLLER')
+  Category.findOne({catName: req.params.catName}, function(err, foundCategory) {
+    Recipe.find({category: foundCategory.id}, function(err, recipes){
+      // console.log('FOUND CATEGORY', foundCategory, recipes)
+      res.render('category/categories', {user: req.user, firstName: req.givenName, category: foundCategory, recipes, title: 'Category Page'});
+      // next()
     });
-  };
+  })
+};
 
   function create(req, res) {
+    Console.log('CATEGORIES CREATE CONTROLLER')
     Category.create(req.body, function(err, category) {
       res.redirect('/users/categories');
     });

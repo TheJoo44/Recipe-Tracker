@@ -6,7 +6,7 @@ const userSchema = new Schema({
   firstName: String,
   email: String,
   photos: String,
-  googelId: String,
+  googleId: String,
   categories: [{
     type: Schema.Types.ObjectId,
     ref: 'User'

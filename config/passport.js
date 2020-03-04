@@ -13,7 +13,7 @@ passport.use(new GoogleStrategy({
     // a user has logged in with OAuth
     User.findOne({'googleId': profile.id}, function(err, user) {
       console.log('Profile: ', profile)
-      console.log('CB: ', cb)
+      console.log('ProfileId', profile.id)
       if (err) return cb(err);
       if (user) {
         // returning user
@@ -23,7 +23,7 @@ passport.use(new GoogleStrategy({
             return cb(null, user);
           });
         } else {
-        return cb(null, user);
+          return cb(null, user);
         }
       } else {
         // we have a new user via oauth
@@ -31,7 +31,7 @@ passport.use(new GoogleStrategy({
           name: profile.displayName,
           firstName: profile.name.givenName,
           email: profile.emails[0].value,
-          googleId: profile.id
+          userId: profile.id
         });
         newUser.save(function(err) {
           if (err) return cb(err);
@@ -43,12 +43,12 @@ passport.use(new GoogleStrategy({
 ));
 
 passport.serializeUser(function(user, done) {
-  console.log('PASSPORT.SERIALIZE')
+  // console.log('PASSPORT.SERIALIZE')
   done(null, user.id);
 }),
 
 passport.deserializeUser(function(id, done) {
-  console.log('PASSPORT.DESERIALIZE')
+  // console.log('PASSPORT.DESERIALIZE')
   User.findById(id, function(err, user) {
     done(err, user);
   });

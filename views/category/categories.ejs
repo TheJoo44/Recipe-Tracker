@@ -3,5 +3,15 @@
   <div class="cat-name">
     <p><%= category.catName.toUpperCase() %></p>
   </div>
+  <div class="new-recipe-btn">
+    <a href="/users/categories/<%= category.catName %>/newrecipes"><button>Add Recipe</button></a>
+  </div>
+  <div class="recipe-list">
+    <ul>
+      <% recipes.forEach(function(r) { %>
+        <a href="/user/categories/<%= category.catName %>/<%= r.name%>"><li><%= r.name %></li></a>
+      <% }) %>
+    </ul>
+  </div>
 </div>
 <%- include('../partials/footer') %>

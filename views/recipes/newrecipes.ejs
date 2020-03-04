@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+<div class="recipe-bkgd">
+  <div class="add-recipe-title">
+    <p>Add A Recipe</p>
+  </div>
+  <div class="add-recipe-form">
+    <form action="/users/categories/<%= catName %>/recipes" method="POST" class="new-recipe-form">
+      <label class ="form-labels" for="name">Recipe Name<br>
+        <input type="textarea" class="formbox" name="name" required>
+      </label><br>
+      <label class ="form-labels" for="description">Description<br>
+        <input type="textarea" class="formbox" name="description" required>
+      </label><br>
+      <label class ="form-labels" for="ingredients">Ingredients
+        <textarea class="formbox" cols="50" name="ingredients" required></textarea>
+      </label><br>
+      <label class ="form-labels" for="instructions">Instructions
+        <textarea class="formbox" cols="50" name="instructions" required></textarea>
+        <br>
+      <!-- <label class ="form-labels" for="picture">Picture
+        <input type="image" src="recipes.image" name="picture">
+      </label><br><br> -->
+      <input type="hidden" name="category" value="<%= foundCategory.id %>">
+      <!-- <input type="hidden" name="category" value="<%=  %>"> -->
+      <input type="submit" class="add-recipe-btn" value="Add Recipe">
+    </form>
+  </div>
+</div>
+<%- include('../partials/footer') %>

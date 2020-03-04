@@ -9,6 +9,7 @@ router.get('/index', usersCtrl.index);
 
 /* GET users listing. */
 router.get('/', isLoggedIn, function(req, res, next) {
+  console.log('GET USERS ROUTES')
   res.render('users/index', {user: req.user, firstName: req.givenName, title: 'Profile Page'});
 });
 
