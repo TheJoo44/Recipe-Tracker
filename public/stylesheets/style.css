@@ -23,6 +23,7 @@ color: mediumblue;
 text-align: center;
 height: 87vh;
 width: 100vw;
+overflow: scroll;
 }
 
 .welcome {
@@ -50,6 +51,7 @@ width: 100vw;
   top: 75px;
   height: 100vh;
   width: 100vw;
+  overflow: scroll;
 }
 
 .profile-name {
@@ -163,6 +165,7 @@ width: 100vw;
   top: 75px;
   height: 100vh;
   width: 100vw;
+  overflow: scroll;
 }
 
 .cat-name {
@@ -172,6 +175,10 @@ width: 100vw;
   text-align: center;
   text-decoration: underline;
   font-family: 'Permanent Marker';
+}
+
+.back-btn {
+  margin: 0 0 -70px 0;
 }
 
 .recipe-list {
@@ -200,6 +207,7 @@ width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  overflow: scroll;
 }
 
 #current {
@@ -218,7 +226,7 @@ width: 100vw;
   grid-template-columns: 1fr 1fr;
   height: 100%;
   overflow: scroll;
-  background-color: #3D768B;
+  background-color: #1C3E4E;
 }
 
 .recipe-title {
@@ -233,18 +241,20 @@ width: 100vw;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
   border: 1px solid white;
+  justify-content: center;
 }
 
 .image {
   grid-row: 1 / 3;
   grid-column: 2 / 2;
+  display: flex;
+  justify-content: center;
 }
 
 .food-image {
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
   border: 1px solid white;
-
 }
 
 .ingredients {
@@ -266,6 +276,9 @@ width: 100vw;
   text-align: right;
   padding: 5px 5px 0 0;
 }
+.textwrap {
+  white-space: pre-wrap;
+}
 
 .recipe-name {
   width: 100%;
@@ -279,17 +292,24 @@ width: 100vw;
   font-family: 'Permanent Marker';
 }
 
+.new-recipe-btn {
+  background-color: green;
+  color: white;
+  margin: 0 auto;
+  width: 120px;
+}
+
 .add-recipe-title {
   text-align: center;
   font-size: 50px;
   color: white;
-  padding: 10px 0 0 10px;
+  margin: -70px 0 -50px 0;
   text-decoration: underline;
 }
 
-.add-recipe-form {
-  height: 65%;
-  width: 50%;
+.new-recipe-form {
+  height: 60vh;
+  width: 70%;
   border: 3px solid white;
   margin: 0 auto;
   overflow: scroll;
