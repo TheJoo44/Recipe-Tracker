@@ -9,7 +9,45 @@
     <div class="description">Description<p><%= recipe.description %></p></div>
     <div class="ingredients">Ingredients<p><%= recipe.ingredients %></p></div>
     <div class="instructions">Instructions<p><%= recipe.instructions %></p></div>
-    <div class="instructions">Created By<p><%= user.name %></p></div>
+    <div class="author">Created By<p><%= user.name %></p></div>
+  </div>
+  <div>
+    <% if (user.id === recipe.userId.toString()) { %>
+      <form action="<%= recipe.name %>/<%= recipe._id %>?_method=PUT" method="POST">
+        <button type="submit" class="edit-btn">Edit Recipe</button>
+      </form>
+    <% } %>
+    <% if (user.id === recipe.userId.toString()) { %>
+      <form action="<%= recipe.name %>/<%= recipe._id %>?_method=DELETE" method="POST">
+        <button type="submit" class="delete-btn">Delete Recipe</button>
+      </form>
+    <% } %>
+  </div>
+</div>
+
+
+<div id="update">
+  <div class="add-recipe-form">
+    <form action="" method="POST" class="new-recipe-form">
+      <label class ="form-labels" for="name">Recipe Name<br>
+        <input type="textarea" class="formbox" name="name" required>
+      </label><br>
+      <label class ="form-labels" for="description">Description<br>
+        <input type="textarea" class="formbox" name="description" value="<%= recipe.description %>" required>
+      </label><br>
+      <label class ="form-labels" for="ingredients">Ingredients
+        <textarea class="formbox" cols="50" name="ingredients" value="<%= recipe.ingredients %>" required></textarea>
+      </label><br>
+      <label class ="form-labels" for="instructions">Instructions
+        <textarea class="formbox" cols="50" name="instructions" value="<%= recipe.instructions %>" required></textarea>
+        <br>
+      <!-- <label class ="form-labels" for="picture">Picture
+        <input type="image" src="recipes.image" name="picture">
+      </label><br><br> -->
+      <input type="hidden" name="category" value="<%= recipe.category._id %>">
+      <!-- <input type="hidden" name="created" value="<%= user.name %>"> -->
+      <input type="submit" class="add-recipe-btn" value="Submit Update">
+    </form>
   </div>
 </div>
 <%- include('../partials/footer') %>

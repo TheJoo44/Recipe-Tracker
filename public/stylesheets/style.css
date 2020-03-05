@@ -219,6 +219,10 @@ width: 100vw;
   margin: 10px 5px;
 }
 
+#update {
+  display: none;
+}
+
 .mynavbar span {
   width: 280px;
   margin: 0;

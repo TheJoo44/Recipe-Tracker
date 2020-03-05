@@ -6,15 +6,23 @@ module.exports = {
   index,
   create,
   new: newRecipe,
-  show
+  show,
+  delete: deleteRec
 };
 
+function deleteRec(req, res) {
+  console.log('DELETE FUNCTION')
+  Recipe.findByIdAndRemove(req.params.id, function(err) {
+      res.redirect(`/users/categories/${req.params.catName}`)
+    })
+  }
+ 
 function show(req, res) {
     console.log('GET RECIPE ROUTE')
     console.log(req.params)
     Recipe.findOne({name: req.params.recName}, function(err, recipe) {
       console.log(recipe)
-      res.render('recipes/recipes', {user: req.user, firstName: req.givenName, recipe, title: 'Recipe Page'});
+      res.render('recipes/recipes', {user: req.user, firstName: req.givenName, catName: req.param.catName, recipe, title: 'Recipe Page'});
     })
   };
 
