@@ -7,18 +7,26 @@ module.exports = {
   create,
   new: newRecipe,
   show,
-  delete: deleteRec
+  delete: deleteRec,
+  update
 };
 
+function update(req, res) {
+  console.log('RECIPE CTRL UPDATE')
+  Recipe.findByIdAndUpdate(req.params.id, function(err) {
+    res.render(`/users/categories/${req.params.catName}`)
+  })
+}
+
 function deleteRec(req, res) {
-  console.log('DELETE FUNCTION')
+  console.log('RECIPE CTRL DELETE')
   Recipe.findByIdAndRemove(req.params.id, function(err) {
       res.redirect(`/users/categories/${req.params.catName}`)
     })
   }
  
 function show(req, res) {
-    console.log('GET RECIPE ROUTE')
+    console.log('RECIPE CTRL SHOW')
     console.log(req.params)
     Recipe.findOne({name: req.params.recName}, function(err, recipe) {
       console.log(recipe)
@@ -27,13 +35,13 @@ function show(req, res) {
   };
 
 function index(req, res) {
-  console.log('RECIPES INDEX PAGE')
+  console.log('RECIPE CTRL INDEX')
   res.render('recipes/recipes', {users, user: req.user, name: req.query.name, recipes, catName: req.params.catName, foundCategory, title: 'Recipe Page'
   });
 };
 
   function create(req, res) {
-    console.log('RECIPES CREATE CONTROLLER')
+    console.log('RECIPES CTRL CREATE')
     // User.findOne({userId: profile.id}, function(err, foundUser) {
       Category.findOne({catName: req.params.catName}, function(err, foundCategory) {
   // week 4 day 5 for array splitting movies.js controller
@@ -59,7 +67,7 @@ function index(req, res) {
     )};
 
   function newRecipe(req, res) {
-    console.log('RECIPES NEWRECIPE CONTROLLER')
+    console.log('RECIPES CTRL NEWRECIPE')
       Category.findOne({catName: req.params.catName}, function(err, foundCategory) {
       res.render('recipes/newrecipes', {user: req.user, firstName: req.givenName, catName: req.params.catName, foundCategory, title: 'New Recipe Page'})
   })};

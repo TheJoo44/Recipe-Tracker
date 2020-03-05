@@ -2,26 +2,29 @@
 <div class="recipe-bkgd">
   <div class="recipe-name">
     <p><%= recipe.name %></p>
-    
   </div>
-  <div class="recipe">
-    <div class="picture"></div>
-    <div class="description">Description<p><%= recipe.description %></p></div>
-    <div class="ingredients">Ingredients<p><%= recipe.ingredients %></p></div>
-    <div class="instructions">Instructions<p><%= recipe.instructions %></p></div>
-    <div class="author">Created By<p><%= user.name %></p></div>
-  </div>
-  <div>
-    <% if (user.id === recipe.userId.toString()) { %>
-      <form action="<%= recipe.name %>/<%= recipe._id %>?_method=PUT" method="POST">
-        <button type="submit" class="edit-btn">Edit Recipe</button>
-      </form>
-    <% } %>
-    <% if (user.id === recipe.userId.toString()) { %>
-      <form action="<%= recipe.name %>/<%= recipe._id %>?_method=DELETE" method="POST">
-        <button type="submit" class="delete-btn">Delete Recipe</button>
-      </form>
-    <% } %>
+  <div id="current">
+    <div class="recipe">
+      <div class="picture"></div>
+      <div class="description recipe-title">Description<p class="recipe-content"><%= recipe.description %></p></div>
+      <div class="image recipe-title"><img src="<%= recipe.image %>" class="recipe-content"></div>
+      <div class="ingredients recipe-title">Ingredients<p class="recipe-content"><%= recipe.ingredients %></p>
+      </div>
+      <div class="instructions recipe-title">Instructions<p class="recipe-content"><%= recipe.instructions %></p></div>
+      <div class="author recipe-title">Created By<p class="recipe-content"><%= user.name %></p></div>
+    </div>
+    <div>
+      <% if (user.id === recipe.userId.toString()) { %>
+        <form action="<%= recipe.name %>/<%= recipe._id %>?_method=PUT" method="POST">
+          <button type="submit" class="edit-btn">Edit Recipe</button>
+        </form>
+      <% } %>
+      <% if (user.id === recipe.userId.toString()) { %>
+        <form action="<%= recipe.name %>/<%= recipe._id %>?_method=DELETE" method="POST">
+          <button type="submit" class="delete-btn">Delete Recipe</button>
+        </form>
+      <% } %>
+    </div>
   </div>
 </div>
 
@@ -41,12 +44,10 @@
       <label class ="form-labels" for="instructions">Instructions
         <textarea class="formbox" cols="50" name="instructions" value="<%= recipe.instructions %>" required></textarea>
         <br>
-      <!-- <label class ="form-labels" for="picture">Picture
-        <input type="image" src="recipes.image" name="picture">
-      </label><br><br> -->
+        <div class="image recipe-title"><img src="<%= recipe.image %>" class="recipe-content"></div>
       <input type="hidden" name="category" value="<%= recipe.category._id %>">
-      <!-- <input type="hidden" name="created" value="<%= user.name %>"> -->
-      <input type="submit" class="add-recipe-btn" value="Submit Update">
+      <!-- <input type="hidden" name="created" value="<%=  %>"> -->
+      <input type="submit" class="edit-recipe-btn" value="Submit Update">
     </form>
   </div>
 </div>

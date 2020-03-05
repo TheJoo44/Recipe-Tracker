@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function index(req, res) {
-  console.log('CATEGORIES INDEX CONTROLLER')
+  console.log('CATEGORIES CTRL INDEX')
   Category.findOne({catName: req.params.catName}, function(err, foundCategory) {
     Recipe.find({category: foundCategory.id}).sort('name').exec(function(err, recipes){
       // console.log('FOUND CATEGORY', foundCategory, recipes)
@@ -18,7 +18,7 @@ function index(req, res) {
 };
 
   function create(req, res) {
-    Console.log('CATEGORIES CREATE CONTROLLER')
+    Console.log('CATEGORIES CTRL CREATE')
     Category.create(req.body, function(err, category) {
       res.redirect('/users/categories');
     });

@@ -12,14 +12,14 @@
         <input type="textarea" class="formbox" name="description" required>
       </label><br>
       <label class ="form-labels" for="ingredients">Ingredients
-        <textarea class="formbox" cols="50" name="ingredients" required></textarea>
+        <textarea class="formbox" cols="50" name="ingredients" wrap="hard" required></textarea>
       </label><br>
       <label class ="form-labels" for="instructions">Instructions
-        <textarea class="formbox" cols="50" name="instructions" required></textarea>
+        <textarea class="formbox" cols="50" name="instructions" wrap="hard" required></textarea>
         <br>
-      <!-- <label class ="form-labels" for="picture">Picture
-        <input type="image" src="recipes.image" name="picture">
-      </label><br><br> -->
+      <label class ="form-labels" for="image">Picture
+        <input type="text" name="image">
+      </label><br><br>
       <input type="hidden" name="category" value="<%= foundCategory.id %>">
       <!-- <input type="hidden" name="created" value="<%= user.name %>"> -->
       <input type="submit" class="add-recipe-btn" value="Add Recipe">

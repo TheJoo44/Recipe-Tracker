@@ -9,6 +9,7 @@ router.get('/:catName/newrecipes', isLoggedIn, recipeCtrl.new);
 router.post('/:catName/recipes', isLoggedIn, recipeCtrl.create);
 router.get('/:catName/:recName', isLoggedIn, recipeCtrl.show);
 router.delete('/:catName/:recName/:id', isLoggedIn, recipeCtrl.delete);
+router.put('/:catName/:recName/:id', isLoggedIn, recipeCtrl.update);
 
 
 function isLoggedIn(req, res, next) {

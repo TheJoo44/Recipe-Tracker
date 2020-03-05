@@ -9,7 +9,7 @@
   <div class="recipe-list">
     <ul>
       <% recipes.forEach(function(r) { %>
-        <a href="/users/categories/<%= category.catName %>/<%= r.name%>"><li><%= r.name %></li></a>
+        <a href="/users/categories/<%= category.catName %>/<%= r.name%>" ><li class="recipe-list-name"><%= r.name %></li></a>
       <% }) %>
     </ul>
   </div>
