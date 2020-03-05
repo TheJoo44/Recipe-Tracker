@@ -5,7 +5,7 @@
   </div>
   <div id="current">
     <div class="recipe">
-      <!-- <div class="image recipe-title"><img src="<%= recipe.image %>" class=" food-image recipe-content"></div> -->
+      <div class="image recipe-title"><img src="<%= recipe.image %>" class="food-image"></div>
       <div class="description recipe-title">Description<p class="recipe-content"><%= recipe.description %></p></div>
       <div class="ingredients recipe-title">Ingredients<p class="recipe-content"><%= recipe.ingredients %></p>
       </div>
@@ -36,9 +36,10 @@
           <textarea class="formbox" cols="50" name="ingredients" required><%= recipe.ingredients %></textarea>
         </label><br>
         <label class ="form-labels" for="instructions">Instructions
-          <textarea class="formbox" cols="50" name="instructions" required><%= recipe.instructions %></textarea>
-          <br>
-          <!-- <div class="image recipe-title"><img src="<%= recipe.image %>" class="recipe-content"></div> -->
+          <textarea class="formbox" cols="50" name="instructions" required><%= recipe.instructions %></textarea><br>
+          <label class ="form-labels" for="image">Picture
+            <input type="text" name="image">
+          </label><br>
         <input type="hidden" name="category" value="<%= recipe.category._id %>">
         <!-- <input type="hidden" name="created" value="<%=  %>"> -->
         <input type="submit" class="edit-recipe-btn" value="Submit Update">

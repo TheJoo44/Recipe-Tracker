@@ -1,15 +1,12 @@
-# Recipe-Tracker(Working Title)
+# Recipe-Tracker
 
 ## Description
-This app will allow you to input your favorite recipes and keep them all stored in one place.  There will be serveal categories for you to choose from.
+This app will allow you to input your favorite recipes and keep them all stored in one place.  There will be serveal categories for you to choose from.  You will see all of the recipes that people have submitted
 
-## Entity Relationship Diagram
-
-![Recipe Tracker ERD](public/images/RecipeTrackerERD.png)
-
-## Wireframe
-
-![Recipe Tracker Wireframe](public/images/RecipeTrackerWireframe.jpg)
+## Screenshots
+![Login Page](public/images/loginpage.png)
+![Profile Page](public/images/profilepage.png)
+![Recipe Page]()
 
 ## Tech Used
 HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
@@ -18,10 +15,10 @@ HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 [Trello](https://trello.com/b/alhQQITZ/project-2)
 
 ## Recipe Tracker Link
-https://recipe-tracker-project.herokuapp.com/
+[Recipe Tracker](https://recipe-tracker-project.herokuapp.com/)
 
 ## Next Steps
-- Add category creation
 - Add recipe favoriting
 - Add favorites page
 - Add commenting
+- Add category creation
