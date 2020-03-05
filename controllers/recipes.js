@@ -13,8 +13,9 @@ module.exports = {
 
 function update(req, res) {
   console.log('RECIPE CTRL UPDATE')
-  Recipe.findByIdAndUpdate(req.params.id, function(err) {
-    res.render(`/users/categories/${req.params.catName}`)
+  Recipe.findByIdAndUpdate(req.params.id, req.body, {new:true}, function(err, updateRec) {
+    console.log(updateRec)
+    res.redirect(`/users/categories/${req.params.catName}/${updateRec.name}`)
   })
 }
 
@@ -30,7 +31,8 @@ function show(req, res) {
     console.log(req.params)
     Recipe.findOne({name: req.params.recName}, function(err, recipe) {
       console.log(recipe)
-      res.render('recipes/recipes', {user: req.user, firstName: req.givenName, catName: req.param.catName, recipe, title: 'Recipe Page'});
+      console.log(req.params.catName)
+      res.render('recipes/recipes', {user: req.user, firstName: req.givenName, catName: req.params.catName, recipe, title: 'Recipe Page'});
     })
   };
 

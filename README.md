@@ -17,11 +17,11 @@ HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 ## Trello
 [Trello](https://trello.com/b/alhQQITZ/project-2)
 
-## App Link
-Coming Soon
+## Recipe Tracker Link
+https://recipe-tracker-project.herokuapp.com/
 
 ## Next Steps
 - Add category creation
-- Add recipe share functionality
 - Add recipe favoriting
 - Add favorites page
+- Add commenting
