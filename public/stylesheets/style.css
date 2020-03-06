@@ -99,7 +99,6 @@ overflow: scroll;
   height: 200px;
   width: 300px;
   margin: 10px 25px;
-  border-bottom: 40px solid black;
 }
 .lunch-cat {
   background-image: url("/images/club-sandwich-served-on-chopping-board-1600711.jpg");
@@ -413,9 +412,9 @@ overflow: scroll;
 }
 
 .mynavbar h1 {
-  font-size: 40px;
+  font-size: 30px;
   text-align: left;
-  padding: 0 0 5px 0;
+  padding: 0 0 10px 0;
   border-right: 10px ridge #9FACAA;
   font-family: 'Kaushan Script';
 }

@@ -2,11 +2,9 @@ var router = require('express').Router();
 var passport = require('passport');
 var usersCtrl = require('../controllers/users');
 
-// router.get('/index', usersCtrl.index);
 
 /* GET login page. */
 router.get('/', function(req, res) {
-  console.log('GET INDEX ROUTES')
   res.render('index', { user: req.user, firstName: req.givenName, title: 'Recipe Tracker' });
 });
 

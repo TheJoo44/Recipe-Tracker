@@ -4,6 +4,8 @@ module.exports = {
   index
 };
 
+// PLANNED SEARCH FUNCTION
+
 function index(req, res, next) {
   console.log('USER INDEX CONT')
   console.log('REQ.USER: ', req.user)

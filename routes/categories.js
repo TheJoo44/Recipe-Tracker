@@ -5,14 +5,11 @@ var categoryCtrl = require('../controllers/categories');
 const Category = require('../models/category');
 const Recipe = require('../models/recipe')
 
-// GET /category
-// router.get('/index', categoryCtrl.index);
 
 
 router.get('/:catName', isLoggedIn, categoryCtrl.index);
 
 router.get('/:catName', isLoggedIn, function(req, res, next) {
-  console.log('GET RECIPES NAMES ROUTE')
   Recipe.find({}, function(err, recipes) {
     res.render('category/:catName', {recipes});
   });

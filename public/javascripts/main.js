@@ -1,5 +1,3 @@
-
-
 if (document.querySelector(".edit-btn")) {const updateBtn = document.querySelector(".edit-btn");
 console.log('UPDATE BUTTON', updateBtn)
 updateBtn.addEventListener("click", showEdit)
