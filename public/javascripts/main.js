@@ -5,7 +5,6 @@ updateBtn.addEventListener("click", showEdit)
 
 function showEdit(evt) {
     evt.preventDefault()
-    console.log('SHOW HIDE')
     const updateEl = document.getElementById("update");
     const currentEl = document.getElementById("current");
     console.log(updateEl, currentEl);

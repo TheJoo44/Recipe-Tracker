@@ -1,4 +1,4 @@
-# Recipe-Tracker
+# Community Cookbook
 
 ## Description
 This app will allow you to input your favorite recipes and keep them all stored in one place.  There will be serveal categories for you to choose from.  You will see all of the recipes that people have submitted
@@ -6,7 +6,7 @@ This app will allow you to input your favorite recipes and keep them all stored 
 ## Screenshots
 ![Login Page](public/images/loginpage.png)
 ![Profile Page](public/images/profilepage.png)
-![Recipe Page]()
+![Recipe Page](public/images/recipepage.png)
 
 ## Tech Used
 HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
@@ -14,8 +14,8 @@ HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 ## Trello
 [Trello](https://trello.com/b/alhQQITZ/project-2)
 
-## Recipe Tracker Link
-[Recipe Tracker](https://recipe-tracker-project.herokuapp.com/)
+## Community Cookbook Link
+[Community Cookbook](https://recipe-tracker-project.herokuapp.com/)
 
 ## Next Steps
 - Add recipe favoriting

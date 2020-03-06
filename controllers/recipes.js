@@ -42,6 +42,7 @@ function index(req, res) {
             ingredients: req.body.ingredients,
             instructions: req.body.instructions,
             userId: req.user.id,
+            // userName: req.user.name,
             category: foundCategory.id
           });
           recipe.save(function(err) {
