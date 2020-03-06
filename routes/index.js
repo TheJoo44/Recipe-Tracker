@@ -5,7 +5,7 @@ var usersCtrl = require('../controllers/users');
 
 /* GET login page. */
 router.get('/', function(req, res) {
-  res.render('index', { user: req.user, firstName: req.givenName, title: 'Recipe Tracker' });
+  res.render('index', { user: req.user, firstName: req.givenName, title: 'Community Cookbook' });
 });
 
 //  Google OAuth login route
