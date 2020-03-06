@@ -37,9 +37,9 @@
           <textarea class="formbox" cols="50" name="ingredients" required><%= recipe.ingredients %></textarea>
         </label><br>
         <label class ="form-labels" for="instructions">Instructions
-          <textarea class="formbox" cols="50" name="instructions" required><%= recipe.instructions %></textarea><br>
+          <textarea class="formbox" rows="4" cols="50" name="instructions" required><%= recipe.instructions %></textarea><br>
           <label class ="form-labels" for="image">Picture
-            <input type="text" name="image" value="<%= recipe.image %>">
+            <input type="text" name="image" class="formbox image-box" value="<%= recipe.image %>">
           </label><br>
         <input type="hidden" name="category" value="<%= recipe.category._id %>">
         <input type="submit" class="edit-recipe-btn" value="Submit Update">

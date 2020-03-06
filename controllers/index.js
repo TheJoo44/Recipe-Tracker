@@ -1,14 +1,16 @@
-const User = require('../models/user');
+// const User = require('../models/user');
 
-module.exports = {
-  index
-};
+// module.exports = {
+//   index
+// };
+
+// PLANNED SORT FUNCTION
 
 // function index(req, res, next) {
 //   console.log('USER INDEX CONT')
 //   console.log('REQ.USER: ', req.user)
 //   // Make the query object to use with Student.find based up
-//   // the user has submitted the search form or now
+//   // the user has submitted the search form or not
 //   let modelQuery = req.query.name ? {name: new RegExp(req.query.name, 'i')} : {};
 //   // Default to sorting by name
 //   let sortKey = req.query.sort || 'name';

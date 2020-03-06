@@ -156,6 +156,28 @@ overflow: scroll;
   margin: 10px 25px;
 }
 
+.sauce-cat {
+  background-image: url("/images/three-assorted-color-of-cream-in-containers-on-brown-wooden-1435901.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
+.crockpot-cat {
+  background-image: url("/images/crockpot.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  height: 200px;
+  width: 300px;
+  margin: 10px 25px;
+}
+
 .cat-bkgd {
   background-image: url("/images/carrots-food-fresh-freshness-616404.jpg");
   background-position: center;
@@ -178,7 +200,12 @@ overflow: scroll;
 }
 
 .back-btn {
-  margin: 0 0 -70px 0;
+  margin: -35px auto -80px auto;
+}
+
+.back-button {
+  color: white;
+  font-size: 1rem;
 }
 
 .recipe-list {
@@ -299,12 +326,20 @@ overflow: scroll;
   width: 120px;
 }
 
+.add-recipe-btn {
+  background-color: green;
+  color: white;
+  margin: 0 auto;
+  width: 120px;
+}
+
 .add-recipe-title {
   text-align: center;
   font-size: 50px;
   color: white;
   margin: -70px 0 -50px 0;
   text-decoration: underline;
+  font-family: 'Permanent Marker';
 }
 
 .new-recipe-form {
@@ -313,17 +348,23 @@ overflow: scroll;
   border: 3px solid white;
   margin: 0 auto;
   overflow: scroll;
+  background-color: #1C3E4E;
 }
 
 .formbox {
-  background-color: white;
-  display: block;
+  background-color: white!important;
+  display: block !important;
+  width: 100% !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-labels {
+  width: 70%;
   color: #D4BC2F;
   font-size: 20px;
   margin: 10px 5px;
+  font-family: 'Amatic SC';
+  font-weight: bold;
 }
 
 .delete-btn {
@@ -343,6 +384,11 @@ overflow: scroll;
   background-color: #55697A;
   border: 2px black solid;
   border-radius: 10%;
+  color: white;
+}
+
+.edit-recipe-btn {
+  background-color: green;
   color: white;
 }
 
