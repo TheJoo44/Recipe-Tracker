@@ -2,7 +2,6 @@ var express = require('express');
 var passport = require('passport');
 var router = express.Router();
 var categoryCtrl = require('../controllers/categories');
-const Category = require('../models/category');
 const Recipe = require('../models/recipe')
 
 

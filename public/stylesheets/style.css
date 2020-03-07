@@ -213,6 +213,7 @@ overflow: scroll;
   border: 3px solid white;
   margin: 0 auto;
   overflow: scroll;
+  background-color: #1C3E4E
 }
 
 .recipe-list-name {
@@ -434,6 +435,7 @@ overflow: scroll;
   padding: 3px;
 }
 
+/* Available Fonts */
 /* font-family: 'Trade Winds', ;
 font-family: 'Lobster', ;
 font-family: 'Indie Flower', ;

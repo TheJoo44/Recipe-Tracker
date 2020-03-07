@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var recipeCtrl = require('../controllers/recipes');
-const Recipe = require('../models/recipe');
 
 // GET /recipe
 router.get('/:catName', recipeCtrl.index);

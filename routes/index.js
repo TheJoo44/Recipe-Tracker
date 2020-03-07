@@ -1,6 +1,5 @@
 var router = require('express').Router();
 var passport = require('passport');
-var usersCtrl = require('../controllers/users');
 
 
 /* GET login page. */

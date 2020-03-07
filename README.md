@@ -18,6 +18,7 @@ HTML / CSS / JS / Node / Express / Mongoose / MongoDB / OAuth
 [Community Cookbook](https://recipe-tracker-project.herokuapp.com/)
 
 ## Next Steps
+- Add transitions to category links
 - Add recipe favoriting
 - Add favorites page
 - Add commenting
